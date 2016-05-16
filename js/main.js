@@ -1,8 +1,30 @@
 jQuery(document).ready(function($){
 	 $(".whatSpan").fadeIn(2000);
+		
+
+				// parallax here
+
+		$(window).scroll(function(){
+
+			var wScroll = $(this).scrollTop();
+			$("h1").css({
+				"transform" : 'translate(0px, '+ wScroll/2 +'%)'
+			});
+
+			$(".middleContent").css({
+				"transform" : 'translate(0px, '+ wScroll/65 +'%)'
+			});
+			// $(".wrapper").css({
+			// 	"transform" : 'translate(0px, -'+ wScroll/32 +'%)'
+			// });
+		})
+
+				// parallax end
+
+				// left menu animation
 
 	window.onload = function() { $(".what1").animate({
-	 	// left menu animation
+
 	 	left: "5%"
 	 }, 
 		600);
@@ -25,7 +47,9 @@ jQuery(document).ready(function($){
 	 	opacity: "1"
 	 },
 	  3200);
+	 
 	 // main selling button anmation
+	 
 	 $('.mainButton').animate ({
 	 	bottom:"0",
 	 	opacity:"1"
