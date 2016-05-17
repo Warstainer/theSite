@@ -63,25 +63,25 @@ table {
 
 /* line 2, ../sass/partials/_base.scss */
 body {
-  height: 2500px;
+  height: 2000px;
   width: 100%;
   margin: auto;
   background-color: white;
 }
 
-/* line 8, ../sass/partials/_base.scss */
+/* line 9, ../sass/partials/_base.scss */
 .theDocument {
   height: 100%;
 }
 
-/* line 12, ../sass/partials/_base.scss */
+/* line 13, ../sass/partials/_base.scss */
 .wrapper {
   height: 1000px;
-  background: url(../img/nature.jpg) no-repeat center fixed;
+  background: url(../img/sky.jpg) no-repeat center;
   background-size: cover;
 }
 
-/* line 18, ../sass/partials/_base.scss */
+/* line 19, ../sass/partials/_base.scss */
 a {
   text-decoration: none;
 }
@@ -3791,57 +3791,19 @@ html {
 }
 /* line 33, ../sass/style.scss */
 .header_wrapper .quotation {
-  width: 36.4%;
+  width: 31.9%;
   background-color: rgba(215, 215, 215, 0.25);
-}
-/* line 38, ../sass/style.scss */
-.header_wrapper h1 {
-  position: relative;
-  font-family: black_jackregular;
-  font-weight: 700;
-  font-size: 4em;
-  display: block;
-  padding-top: 20px;
-  width: 30%;
-  height: 85px;
-  text-align: center;
-  opacity: .3;
-  letter-spacing: .1em;
-  /*	.triangle-right {
-  		position: absolute;
-  		width: 0;
-  		height: 0;
-  		border-top: 20px solid transparent;
-  		border-left: 30px solid #ecb42c;
-  		border-bottom: 20px solid transparent;
-  		right: -15px;
-  		top: 15px;
-  	}*/
-}
-/* line 61, ../sass/style.scss */
-.header_wrapper h1 a {
-  color: black;
-  position: relative;
-}
-/* line 65, ../sass/style.scss */
-.header_wrapper h1 a:hover {
-  opacity: 1;
-  -webkit-animation: title 1.5s linear;
-  animation: title 1.5s linear;
-}
-/* line 72, ../sass/style.scss */
-.header_wrapper .titleSpan {
-  padding-left: 2em;
 }
 
 /*header navigation*/
-/* line 81, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .topMenu {
   position: relative;
-  width: 50%;
+  width: 70%;
   margin-right: 5em;
+  margin-top: 2em;
 }
-/* line 85, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .topMenu .firstMenu {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3853,17 +3815,11 @@ html {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-/* line 95, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .topMenu .firstMenu li {
   position: relative;
 }
-/* line 98, ../sass/style.scss */
-.topMenu .firstMenu li:hover i {
-  color: blue;
-  border: .4px solid #46c673;
-  border-radius: 40%;
-}
-/* line 103, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .topMenu .firstMenu li i {
   font-size: 1.5em;
   color: black;
@@ -3873,58 +3829,43 @@ html {
   position: absolute;
   transition: all .4s ease-in-out;
 }
-/* line 113, ../sass/style.scss */
-.topMenu .firstMenu:after {
-  content: "";
-  position: absolute;
-  width: 630px;
-  border-bottom: 2px solid #8cd1f8;
-  right: 25px;
-  bottom: 0px;
-}
 
-/* line 123, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 li a {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.7);
   display: block;
   padding: 1.2em 1.2em 1.2em 1.6em;
   font-size: 1.3em;
   font-family: open_sansitalic;
 }
-/* line 131, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 li a:hover {
   opacity: 1;
-  color: #d08e0f;
+  color: white;
   -webkit-animation: menuButtons 1s linear;
   animation: menuButtons 1s linear;
 }
 
 /*navigation end*/
 /*contentTop start*/
-/* line 145, ../sass/style.scss */
-.contentTop {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* line 150, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .aside {
   width: 30%;
-  height: 915px;
-  background-color: rgba(215, 215, 215, 0.25);
+  height: 1000px;
+  background-color: rgba(215, 215, 215, 0.15);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 156, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .whatSpan {
   display: none;
 }
 
-/* line 159, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .what1, .what2, .what3, .what4 {
-  background-color: rgba(254, 189, 65, 0.55);
+  background-color: rgba(250, 250, 250, 0.15);
   border-bottom-right-radius: 20%;
   border-top-left-radius: 20%;
   box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.6);
@@ -3943,17 +3884,8 @@ li a:hover {
   text-align: center;
   transition: all .3s ease-in-out;
   width: 50%;
-  /*	&:after {
-  		content:"";
-  		width: 50px;
-  		position: absolute;
-  		left: -52px;
-  		top: 50%;
-  		height: 2px;
-  		background-color: grey;}
-  		}*/
 }
-/* line 188, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .what1:hover, .what2:hover, .what3:hover, .what4:hover {
   color: white;
   box-shadow: 0px 27px 20px -16px rgba(0, 0, 0, 0.3);
@@ -3961,40 +3893,46 @@ li a:hover {
   -ms-transform: translate(0px, -4px);
   transform: translate(0px, -4px);
   background-color: rgba(254, 189, 65, 0.75);
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 0%;
+  border-top-left-radius: 0%;
 }
-/* line 196, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .what1 .whatSpan, .what2 .whatSpan, .what3 .whatSpan, .what4 .whatSpan {
   color: black;
   font-weight: 100;
 }
 
-/* line 201, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .what1 {
-  background-color: rgba(243, 142, 81, 0.55);
+  margin-top: 150px;
 }
 
-/* line 204, ../sass/style.scss */
-.what3 {
-  background-color: rgba(243, 142, 81, 0.55);
-}
-
-/* line 207, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .what2:hover {
   background-color: rgba(165, 205, 88, 0.75);
 }
 
-/* line 210, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .what4:hover {
-  background-color: rgba(229, 237, 96, 0.75);
+  background-color: rgba(165, 205, 88, 0.75);
 }
 
-/* line 214, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
+.contentTop {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 156, ../sass/style.scss */
 .middleContent {
   width: 33%;
   margin: 180px auto 0 auto;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .button_title_text {
   position: relative;
   opacity: 0;
@@ -4009,7 +3947,7 @@ li a:hover {
   border-bottom: 1px solid grey;
 }
 
-/* line 232, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .textSmall {
   display: block;
   color: grey;
@@ -4025,10 +3963,9 @@ li a:hover {
   opacity: 0;
 }
 
-/* line 246, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .mainButton {
   background-color: #f5bb4c;
-  border-radius: 45px;
   border: 1px solid #b5b5b5;
   box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -4045,24 +3982,85 @@ li a:hover {
   bottom: -100px;
   opacity: 0;
 }
-/* line 264, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .mainButton:hover {
-  background: linear-gradient(to right, #ffc88a 0%, #ffc88a 38%, #ffc88a 41%, #ffa238 90%);
-  color: #ff8c26;
-  box-shadow: 0px 3px 10px 4px #f7c268;
   box-shadow: 0px 27px 20px -16px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(0px, -6px);
   -ms-transform: translate(0px, -6px);
   transform: translate(0px, -6px);
+  border-radius: 2em;
 }
-/* line 274, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .mainButton a {
   color: black;
 }
 
-/* line 278, ../sass/style.scss */
-.rightSide {
-  width: 33%;
+/*contentTop ends*/
+/*content starts*/
+/* line 223, ../sass/style.scss */
+.content {
+  margin-top: 50px;
+}
+
+/* line 227, ../sass/style.scss */
+.contentWrap {
+  background: url(../img/underwater.jpg) no-repeat center fixed;
+  height: 900px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 235, ../sass/style.scss */
+.left_side_part {
+  width: 33.33%;
+}
+
+/* line 239, ../sass/style.scss */
+h1 {
+  position: relative;
+  font-family: black_jackregular;
+  font-weight: 700;
+  font-size: 5em;
+  display: block;
+  width: 33.33%;
+  height: 85px;
+  text-align: center;
+  opacity: 0.03;
+  letter-spacing: .1em;
+}
+/* line 250, ../sass/style.scss */
+h1 a {
+  color: black;
+  position: relative;
+}
+
+/* line 255, ../sass/style.scss */
+.titleSpan {
+  padding-left: 2em;
+}
+
+/* line 259, ../sass/style.scss */
+.right_side_part {
+  width: 33.33%;
+}
+
+/* line 267, ../sass/style.scss */
+.footer {
+  margin-top: 50px;
+  height: 500px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+/* line 276, ../sass/style.scss */
+.footer .veryBottom {
+  height: 300px;
+  width: 100%;
+  background: #eee;
 }
 
 /*logo to footer*/

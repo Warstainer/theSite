@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 
 			var wScroll = $(this).scrollTop();
 			$("h1").css({
-				"transform" : 'translate(0px, '+ wScroll/2 +'%)'
+				"transform" : 'translate(0px, '+ wScroll/4 +'%)'
 			});
 
 			$(".middleContent").css({
