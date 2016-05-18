@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 	 $(".whatSpan").fadeIn(2000);
 		
 
-				// parallax here
+				// all parallax here
 
 		$(window).scroll(function(){
 
@@ -14,39 +14,28 @@ jQuery(document).ready(function($){
 			$(".middleContent").css({
 				"transform" : 'translate(0px, '+ wScroll/65 +'%)'
 			});
-			// $(".wrapper").css({
-			// 	"transform" : 'translate(0px, -'+ wScroll/32 +'%)'
-			// });
-		})
+			if (wScroll > $(".contentWrap").offset().top -
+				($(window).height() /1.3)) {
+				$(".contentWrap").addClass("showContent");
+			} else {$(".contentWrap").removeClass("showContent");}
+		});
 
 				// parallax end
 
 				// left menu animation
 
-	window.onload = function() { $(".what1").animate({
+		window.onload = $(".what").each(function(i){
+						
+						setTimeout(function(){
 
-	 	left: "5%"
-	 }, 
-		600);
-		$(".what2").animate({
-	 	left: "5%"
-	 }, 
-		900);
-		$(".what3").animate({
-	 	left: "5%" 
-	 }, 
-		1100);
-		$(".what4").animate({
-	 	left: "5%"
-	 }, 
-		1300);
-		 
-		 //text above button animation
-	 
-	 $(".button_title_text").animate({
-	 	opacity: "1"
-	 },
-	  3200);
+						$(".what").eq(i).addClass("is-showing");	//iterating and adding class to each
+						
+						}, 350*(i+1));	//delay of setTimeout for each class
+				});//end each function
+
+		  //text above button animation
+
+	 $(".button_title_text").fadeIn(3000);
 	 
 	 // main selling button anmation
 	 
@@ -59,7 +48,7 @@ jQuery(document).ready(function($){
 	 	left:"0",
 	 	opacity:"1"
 	 }, 600);
-	
-	}
+
+
 
 });

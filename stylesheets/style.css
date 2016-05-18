@@ -3818,29 +3818,30 @@ html {
 /* line 58, ../sass/style.scss */
 .topMenu .firstMenu li {
   position: relative;
-}
-/* line 60, ../sass/style.scss */
-.topMenu .firstMenu li i {
-  font-size: 1.5em;
-  color: black;
-  padding: 3px;
-  top: 17px;
-  left: -10px;
-  position: absolute;
-  transition: all .4s ease-in-out;
+  /*i {
+  	font-size: 1.3em;
+  	color: black;
+  	padding: 3px; 
+  	top: 17px;
+  	left: -10px;
+  	position: absolute;
+  	transition: all .4s ease-in-out;
+  	}*/
 }
 
 /* line 72, ../sass/style.scss */
 li a {
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.7);
   display: block;
   padding: 1.2em 1.2em 1.2em 1.6em;
-  font-size: 1.3em;
-  font-family: open_sansitalic;
+  font-size: 1.2em;
+  font-family: open_sansregular;
+  transition: all .4s ease-in-out;
 }
-/* line 80, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 li a:hover {
   opacity: 1;
   color: white;
@@ -3850,7 +3851,7 @@ li a:hover {
 
 /*navigation end*/
 /*contentTop start*/
-/* line 94, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .aside {
   width: 30%;
   height: 1000px;
@@ -3858,13 +3859,13 @@ li a:hover {
   border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 101, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .whatSpan {
   display: none;
 }
 
-/* line 104, ../sass/style.scss */
-.what1, .what2, .what3, .what4 {
+/* line 106, ../sass/style.scss */
+.what {
   background-color: rgba(250, 250, 250, 0.15);
   border-bottom-right-radius: 20%;
   border-top-left-radius: 20%;
@@ -3875,6 +3876,7 @@ li a:hover {
   font-family: Open Sans, Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 400;
+  height: 15%;
   left: -200%;
   line-height: 1.5em;
   margin-left: 50px;
@@ -3882,11 +3884,12 @@ li a:hover {
   padding: 5%;
   position: relative;
   text-align: center;
-  transition: all .3s ease-in-out;
-  width: 50%;
+  text-transform: uppercase;
+  transition: all .5s ease-in-out;
+  width: 60%;
 }
-/* line 124, ../sass/style.scss */
-.what1:hover, .what2:hover, .what3:hover, .what4:hover {
+/* line 128, ../sass/style.scss */
+.what:hover {
   color: white;
   box-shadow: 0px 27px 20px -16px rgba(0, 0, 0, 0.3);
   -webkit-transform: translate(0px, -4px);
@@ -3898,56 +3901,73 @@ li a:hover {
   border-bottom-right-radius: 0%;
   border-top-left-radius: 0%;
 }
-/* line 136, ../sass/style.scss */
-.what1 .whatSpan, .what2 .whatSpan, .what3 .whatSpan, .what4 .whatSpan {
+/* line 140, ../sass/style.scss */
+.what:hover .whatSpan {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 900;
+}
+/* line 144, ../sass/style.scss */
+.what .whatSpan {
   color: black;
+  text-transform: lowercase;
   font-weight: 100;
+  line-height: 2em;
 }
 
-/* line 141, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .what1 {
   margin-top: 150px;
 }
+/* line 153, ../sass/style.scss */
+.what1:hover {
+  background: url(../img/fly1.png) no-repeat center;
+  background-size: cover;
+}
 
-/* line 144, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .what2:hover {
   background-color: rgba(165, 205, 88, 0.75);
 }
 
-/* line 147, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .what4:hover {
   background-color: rgba(165, 205, 88, 0.75);
 }
 
-/* line 151, ../sass/style.scss */
+/*adding class for aside menu*/
+/* line 167, ../sass/style.scss */
+.is-showing {
+  left: 5%;
+}
+
+/*end of class addition*/
+/* line 171, ../sass/style.scss */
 .contentTop {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .middleContent {
   width: 33%;
   margin: 180px auto 0 auto;
 }
 
-/* line 161, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .button_title_text {
   position: relative;
-  opacity: 0;
-  display: block;
+  display: none;
   color: grey;
-  padding: 1em;
+  padding: .5em;
   margin: auto;
   width: 270px;
   text-align: center;
   text-transform: uppercase;
   font-size: 2em;
-  border-bottom: 1px solid grey;
 }
 
-/* line 174, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .textSmall {
   display: block;
   color: grey;
@@ -3961,11 +3981,12 @@ li a:hover {
   position: relative;
   left: 250px;
   opacity: 0;
+  border-top: 1px solid grey;
 }
 
-/* line 188, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .mainButton {
-  background-color: #f5bb4c;
+  background-color: transparent;
   border: 1px solid #b5b5b5;
   box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -3982,7 +4003,7 @@ li a:hover {
   bottom: -100px;
   opacity: 0;
 }
-/* line 205, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .mainButton:hover {
   box-shadow: 0px 27px 20px -16px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(0px, -6px);
@@ -3990,33 +4011,44 @@ li a:hover {
   transform: translate(0px, -6px);
   border-radius: 2em;
 }
-/* line 212, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .mainButton a {
   color: black;
 }
 
 /*contentTop ends*/
 /*content starts*/
-/* line 223, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .content {
   margin-top: 50px;
 }
 
-/* line 227, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .contentWrap {
-  background: url(../img/underwater.jpg) no-repeat center fixed;
+  background: url(../img/underwater2.jpg) no-repeat fixed;
+  background-size: cover;
   height: 900px;
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  transition: all .6s ease-in-out;
 }
 
-/* line 235, ../sass/style.scss */
+/*class adding for content*/
+/* line 259, ../sass/style.scss */
+.showContent {
+  opacity: 1;
+}
+
+/*end of addition*/
+/* line 264, ../sass/style.scss */
 .left_side_part {
   width: 33.33%;
 }
 
-/* line 239, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 h1 {
   position: relative;
   font-family: black_jackregular;
@@ -4029,23 +4061,23 @@ h1 {
   opacity: 0.03;
   letter-spacing: .1em;
 }
-/* line 250, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 h1 a {
   color: black;
   position: relative;
 }
 
-/* line 255, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .titleSpan {
   padding-left: 2em;
 }
 
-/* line 259, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .right_side_part {
   width: 33.33%;
 }
 
-/* line 267, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 .footer {
   margin-top: 50px;
   height: 500px;
@@ -4056,9 +4088,9 @@ h1 a {
   -ms-flex-align: end;
   align-items: flex-end;
 }
-/* line 276, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 .footer .veryBottom {
-  height: 300px;
+  height: 500px;
   width: 100%;
   background: #eee;
 }
